@@ -1,0 +1,42 @@
+{
+	"title": "olimsd API documentation",
+	"general_query_parameters": [{
+		"name": "tok",
+		"method": "get",
+		"type": "string",
+		"description": "List of full text search tokens"
+	}, {
+		"name": "zip",
+		"method": "get",
+		"type": "boolean",
+		"description": "Use gzip response"
+	}, {
+		"name": "env",
+		"method": "get",
+		"type": "boolean",
+		"description": "Use envelope on a response"
+	}, {
+		"name": "pretty",
+		"method": "get",
+		"type": "boolean",
+		"description": "Use pretty print a response"
+	}, {
+		"name": "tax",
+		"method": "get",
+		"type": "dictionary",
+		"description": "List of key value pairs. Key is taxonomy tag, value is taxonomy value"
+	}],
+	"sample_query_parameters": [{
+		"name": "fields",
+		"method": "get",
+		"type": "string list",
+		"description": "List of fields to include in a response"
+	}, {
+		"name": "order",
+		"method": "get",
+		"type": "string list",
+		"description": "List of fields used to sort a response. A field prefixed with a hyphen (-) should be sorted in descendant order"
+	}],
+	"project_query_parameters": [],
+	"user_query_parameters": []
+}
