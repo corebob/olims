@@ -1,7 +1,7 @@
 {
 	"title": "olimsd API documentation",
 	"endpoint": {		
-		"url": "/sample",
+		"uri": "/sample",
 		"methods": [{
 			"get": {
 				"query_parameters": [{
@@ -45,7 +45,7 @@
 		}]
 	},
 	"endpoint": {	
-		"url": "/project",
+		"uri": "/project",
 		"methods": [{
 			"get": {}
 		}, {
@@ -59,7 +59,7 @@
 		}]
 	},
 	"endpoint": {	
-		"url": "/user",
+		"uri": "/user",
 		"methods": [{
 			"get": {}
 		}, {
