@@ -9,17 +9,17 @@
 		"name": "zip",
 		"method": "get",
 		"type": "boolean",
-		"description": "Use gzip response"
+		"description": "Use gzip compression on response"
 	}, {
 		"name": "env",
 		"method": "get",
 		"type": "boolean",
-		"description": "Use envelope on a response"
+		"description": "Use envelope on response"
 	}, {
 		"name": "pretty",
 		"method": "get",
 		"type": "boolean",
-		"description": "Use pretty print a response"
+		"description": "Use pretty print on response"
 	}, {
 		"name": "tax",
 		"method": "get",
@@ -30,12 +30,12 @@
 		"name": "fields",
 		"method": "get",
 		"type": "string list",
-		"description": "List of fields to include in a response"
+		"description": "List of fields to include in response"
 	}, {
 		"name": "order",
 		"method": "get",
 		"type": "string list",
-		"description": "List of fields used to sort a response. A field prefixed with a hyphen (-) should be sorted in descendant order"
+		"description": "List of fields used to sort the response. A field prefixed with a hyphen (-) should be sorted in descendant order"
 	}],
 	"project_query_parameters": [],
 	"user_query_parameters": []
