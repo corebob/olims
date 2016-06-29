@@ -5,7 +5,7 @@
 		"methods": [{
 			"get": {
 				"query_parameters": [{
-					"name": "fields",
+					"name": "field",
 					"type": "string list",
 					"description": "List of fields to include in response"
 				}, {
