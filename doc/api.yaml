@@ -1,0 +1,200 @@
+swagger: '2.0'
+
+info:
+  version: "0.0.1"
+  title: open laboratory information management system (olims) API
+
+paths:
+
+  /samples:
+    get:
+      description:
+        Gets `Sample` objects.
+        Optional query param **fields** determines
+        which fields to return
+        
+      parameters:
+        -
+          name: fields
+          in: query
+          description: Fields to return
+          required: false
+          type: string
+        -
+          name: tax
+          in: query
+          description: Taxonomy tags to include
+          required: false
+          type: string
+          format: map
+        -
+          name: tokens
+          in: query
+          description: Tokens for full text search
+          required: false
+          type: string
+        -
+          name: order
+          in: query
+          description: Fields to order by
+          required: false
+          type: string
+        -
+          name: zip
+          in: query
+          description: Use gzip compression on response
+          required: false
+          type: boolean
+        -
+          name: envelope
+          in: query
+          description: Use envelope on response
+          required: false
+          type: boolean
+        -
+          name: pretty
+          in: query
+          description: Use pretty print on response
+          required: false
+          type: boolean
+          
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Sample"
+              
+  /projects:
+    get:
+      description:
+        Gets `Project` objects.
+        Optional query param **fields** determines
+        which fields to return
+        
+      parameters:
+        -
+          name: fields
+          in: query
+          description: Fields to return
+          required: false
+          type: string
+        -
+          name: tax
+          in: query
+          description: Taxonomy tags to include
+          required: false
+          type: string
+          format: map
+        -
+          name: order
+          in: query
+          description: Fields to order by
+          required: false
+          type: string
+        -
+          name: zip
+          in: query
+          description: Use gzip compression on response
+          required: false
+          type: boolean
+        -
+          name: envelope
+          in: query
+          description: Use envelope on response
+          required: false
+          type: boolean
+        -
+          name: pretty
+          in: query
+          description: Use pretty print on response
+          required: false
+          type: boolean
+      
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Project"
+              
+  /users:
+    get:
+      description:
+        Gets `User` objects.
+        Optional query param **fields** determines
+        which fields to return
+        
+      parameters:
+        -
+          name: fields
+          in: query
+          description: Fields to return
+          required: false
+          type: string
+        -
+          name: order
+          in: query
+          description: Fields to order by
+          required: false
+          type: string
+        -
+          name: zip
+          in: query
+          description: Use gzip compression on response
+          required: false
+          type: boolean
+        -
+          name: envelope
+          in: query
+          description: Use envelope on response
+          required: false
+          type: boolean
+        -
+          name: pretty
+          in: query
+          description: Use pretty print on response
+          required: false
+          type: boolean
+          
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/User"
+              
+definitions:
+
+  Sample:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      collector:
+        type: string
+      collect_date:
+        type: string
+        format: date-time
+        
+  Project:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+    
+  User:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      username:
+        type: string
+      email:
+        type: string
