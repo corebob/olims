@@ -1,12 +1,18 @@
 Sample:
   $ref: ./Sample.yaml
+Preparation:
+  $ref: ./Preparation.yaml
+Analysis:
+  $ref: ./Analysis.yaml
 Project:
   $ref: ./Project.yaml
+Contract:
+  $ref: ./Contract.yaml
 Assigner:
   $ref: ./Assigner.yaml
 Contact:
   $ref: ./Contact.yaml
 User:
   $ref: ./User.yaml
-Error:
-  $ref: ./Error.yaml
+APIError:
+  $ref: ./OLError.yaml

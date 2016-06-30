@@ -45,4 +45,4 @@ get:
     default:
       description: Error message
       schema:
-        $ref: '#/definitions/Error'
+        $ref: '#/definitions/OLError'
