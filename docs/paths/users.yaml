@@ -1,0 +1,54 @@
+get:
+  description:
+    Gets `User` objects.
+    Optional query param **fields** determines
+    which fields to return
+  
+  operationId: getUsers
+  
+  parameters:
+    -
+      name: fields
+      in: query
+      description: Fields to return
+      required: false
+      type: string
+    -
+      name: order
+      in: query
+      description: Fields to order by
+      required: false
+      type: string
+    -
+      name: zip
+      in: query
+      description: Use gzip compression on response
+      required: false
+      type: boolean
+    -
+      name: envelope
+      in: query
+      description: Use envelope on response
+      required: false
+      type: boolean
+    -
+      name: pretty
+      in: query
+      description: Use pretty print on response
+      required: false
+      type: boolean
+    
+  produces:
+    - application/json
+    
+  responses:
+    200:
+      description: Successful response
+      schema:
+        type: array
+        items:
+          $ref: "#/definitions/User"
+    default:
+      description: Error message
+      schema:
+        $ref: '#/definitions/Error'

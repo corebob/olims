@@ -1,0 +1,12 @@
+Sample:
+  $ref: ./Sample.yaml
+Project:
+  $ref: ./Project.yaml
+Assigner:
+  $ref: ./Assigner.yaml
+Contact:
+  $ref: ./Contact.yaml
+User:
+  $ref: ./User.yaml
+Error:
+  $ref: ./Error.yaml

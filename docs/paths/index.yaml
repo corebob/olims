@@ -1,0 +1,11 @@
+/samples:
+  $ref: ./samples.yaml
+/projects:
+  $ref: ./projects.yaml
+/assigners:
+  $ref: ./assigners.yaml
+/contacts:
+  $ref: ./contacts.yaml
+/users:
+  $ref: ./users.yaml
+  

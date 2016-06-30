@@ -1,0 +1,67 @@
+get:
+  description:
+    Gets `Sample` objects.
+    Optional query param **fields** determines
+    which fields to return
+    
+  operationId: getSamples
+    
+  parameters:
+    -
+      name: fields
+      in: query
+      description: Fields to return
+      required: false
+      type: string
+    -
+      name: tax
+      in: query
+      description: Taxonomy tags to include
+      required: false
+      type: string
+      format: map
+    -
+      name: tokens
+      in: query
+      description: Tokens for full text search
+      required: false
+      type: string
+    -
+      name: order
+      in: query
+      description: Fields to order by
+      required: false
+      type: string
+    -
+      name: zip
+      in: query
+      description: Use gzip compression on response
+      required: false
+      type: boolean
+    -
+      name: envelope
+      in: query
+      description: Use envelope on response
+      required: false
+      type: boolean
+    -
+      name: pretty
+      in: query
+      description: Use pretty print on response
+      required: false
+      type: boolean
+      
+  produces:
+    - application/json
+    
+  responses:
+    200:
+      description: Successful response
+      schema:
+        type: array
+        items:
+          $ref: "#/definitions/Sample"
+    default:
+      description: Error message
+      schema:
+        $ref: '#/definitions/Error'
