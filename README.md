@@ -1,4 +1,4 @@
-Open laboratory information management system daemon
+Open laboratory information management system
 
 
 # olims API and reference implementation
