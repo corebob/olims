@@ -2,7 +2,7 @@ type: object
 properties:
   id:
     type: integer
-    format: int64  
+    format: int64
   name:
     type: string
   state:
@@ -24,8 +24,8 @@ properties:
   signed:
     type: boolean
   assigner:
-    $ref: '#/definitions/Assigner'
+    $ref: './Assigner.yaml'
   responsible:
-    $ref: '#/definitions/Contact'
+    $ref: './Contact.yaml'
   project:
-    $ref: '#/definitions/Project'
+    $ref: './Project.yaml'

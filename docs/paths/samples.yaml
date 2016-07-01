@@ -3,9 +3,9 @@ get:
     Gets `Sample` objects.
     Optional query param **fields** determines
     which fields to return
-    
+
   operationId: getSamples
-    
+
   parameters:
     -
       name: fields
@@ -50,18 +50,18 @@ get:
       description: Use pretty print on response
       required: false
       type: boolean
-      
+
   produces:
     - application/json
-    
+
   responses:
     200:
       description: Successful response
       schema:
         type: array
         items:
-          $ref: "#/definitions/Sample"
+          $ref: "../definitions/Sample.yaml"
     default:
       description: Error message
       schema:
-        $ref: '#/definitions/OLError'
+        $ref: '../definitions/OLError.yaml'
