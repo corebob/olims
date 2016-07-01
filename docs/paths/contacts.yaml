@@ -41,7 +41,7 @@ get:
       schema:
         type: array
         items:
-          $ref: "../definitions/Contact.yaml"
+          $ref: ../definitions/Contact.yaml
     default:
       description: Error message
       schema:

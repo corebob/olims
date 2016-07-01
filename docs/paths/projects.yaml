@@ -54,8 +54,8 @@ get:
       schema:
         type: array
         items:
-          $ref: "../definitions/Project.yaml"
+          $ref: ../definitions/Project.yaml
     default:
       description: Error message
       schema:
-        $ref: "../definitions/OLError.yaml"
+        $ref: ../definitions/OLError.yaml

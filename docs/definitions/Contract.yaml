@@ -24,8 +24,8 @@ properties:
   signed:
     type: boolean
   assigner:
-    $ref: './Assigner.yaml'
+    $ref: ./Assigner.yaml
   responsible:
-    $ref: './Contact.yaml'
+    $ref: ./Contact.yaml
   project:
-    $ref: './Project.yaml'
+    $ref: ./Project.yaml

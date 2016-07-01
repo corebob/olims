@@ -41,8 +41,8 @@ get:
       schema:
         type: array
         items:
-          $ref: "../definitions/Assigner.yaml"
+          $ref: ../definitions/Assigner.yaml
     default:
       description: Error message
       schema:
-        $ref: "../definitions/OLError.yaml"
+        $ref: ../definitions/OLError.yaml

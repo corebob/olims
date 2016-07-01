@@ -16,4 +16,4 @@ properties:
   email:
     type: string
   assigner:
-    $ref: './Assigner.yaml'
+    $ref: ./Assigner.yaml

@@ -60,8 +60,8 @@ get:
       schema:
         type: array
         items:
-          $ref: "../definitions/Sample.yaml"
+          $ref: ../definitions/Sample.yaml
     default:
       description: Error message
       schema:
-        $ref: '../definitions/OLError.yaml'
+        $ref: ../definitions/OLError.yaml
