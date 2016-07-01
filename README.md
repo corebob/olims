@@ -1,7 +1,7 @@
-# Open laboratory information management system API
+## Open laboratory information management system API
 
 
-## Overview
+### Overview
 
 Swagger project documenting the olims API
 
